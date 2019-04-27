@@ -9,7 +9,7 @@ Early version: http://gamestoolkit.azurewebsites.net/
 ## Builds
 
 | **Branch** | Build status |
-| ------------- |:-------------:| -----:|
+| ------------- |:-------------:|
 | **Master**        | [![Build Status](https://travis-ci.org/gamestoolkit/Satellite.svg?branch=master)](https://travis-ci.org/gamestoolkit/Satellite)  |
 | **Dev**        | [![Build Status](https://travis-ci.org/gamestoolkit/Satellite.svg?branch=dev)](https://travis-ci.org/gamestoolkit/Satellite)  |
 
