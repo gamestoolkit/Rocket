@@ -4,7 +4,7 @@
 
 ReactJS frontend of GamesToolkit.
 
-Early version: http://gamestoolkit.azurewebsites.net/
+Early version: https://gamestoolkit.azurewebsites.net/
 
 ## Builds
 
