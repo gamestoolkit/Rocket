@@ -2,7 +2,9 @@
 
 > UNDER DEVELOPMENT.
 
-This is the frontend of GamesToolkit.
+ReactJS frontend of GamesToolkit.
+
+Early version: http://gamestoolkit.azurewebsites.net/
 
 ## Builds
 
@@ -11,3 +13,10 @@ This is the frontend of GamesToolkit.
 | **Master**        | [![Build Status](https://travis-ci.org/gamestoolkit/Satellite.svg?branch=master)](https://travis-ci.org/gamestoolkit/Satellite)  |
 | **Dev**        | [![Build Status](https://travis-ci.org/gamestoolkit/Satellite.svg?branch=dev)](https://travis-ci.org/gamestoolkit/Satellite)  |
 
+
+
+This project is being developed by [equilaterus](https://equilaterus.github.io).
+
+Games Toolkit also uses these solutions from equilaterus:
+
+* bootlaterus: https://github.com/equilaterus/bootlaterus
