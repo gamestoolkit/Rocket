@@ -6,11 +6,13 @@ import AssetsPage from '../pages/AssetsPage';
 import AssetDetailsContainer from '../containers/AssetDetailsContainer';
 import history from '../history';
 
+import '../common/style.css'
+
 const Root = ({ store }) => (
   <Provider store={store}>
     <Router history={history} >
       <Navigation />
-      <div id="main-container" className="container">
+      <div id="main-container" className="container mt-5">
         <Switch>
           <Route path="/" exact component={AssetsPage} />
           <Route path="/Asset/:urlSlug?" component={AssetDetailsContainer} />

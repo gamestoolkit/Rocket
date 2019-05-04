@@ -6,7 +6,7 @@ describe('assets reducer', () => {
   it('should handle initial state', () => {
     expect(
       assets(undefined, {})
-    ).toEqual({isLoading: true})
+    ).toEqual({isLoading: true, data: [], current: null})
   })
 
   it('should handle FETCHING_DATA for a new state', () => {
