@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 import SearchBar from '../components/SearchBar'
 
 const Navigation = () => (
-  <Navbar bg="dark" variant="dark" expand="lg">
+  <Navbar bg="dark-alpha-med" variant="dark" expand="lg" fixed="top">
     <div className="container">
       <Navbar.Brand href="#home">Games Toolkit</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
