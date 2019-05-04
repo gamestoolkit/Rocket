@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lilita+One');
 
 .navbar, h1, h2, h3, h4, h5, h6  {
-  /*font-family: 'Lilita one' !important;*/
+  font-family: 'Prompt' !important;
+  font-weight: bold;
+  text-transform: uppercase;
 }

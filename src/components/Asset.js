@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Asset = ({ asset }) => {  
   return (    
     <div className="col-md-4 mb-4">
-      <div className="card">
+      <div className="card h-100">
         <Link to={`/Asset/${asset.urlSlug}`}>
           <img src={asset.featuredImageUrl} className="card-img" />
           <div className="card-body">
