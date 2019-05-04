@@ -1,7 +1,9 @@
 import Constants from '../common/constants'
 
 const defaultState = {
-  isLoading: true
+  isLoading: true,
+  data: [],
+  current: null
 }
 
 const assets = (state = defaultState, action) => {
