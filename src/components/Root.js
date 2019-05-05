@@ -11,14 +11,12 @@ import '../common/style.css'
 const Root = ({ store }) => (
   <Provider store={store}>
     <Router history={history} >
-      <Navigation />
-      <div id="main-container" className="container mt-5">
-        <Switch>
-          <Route path="/" exact component={AssetsPage} />
-          <Route path="/Asset/:urlSlug?" component={AssetDetailsContainer} />
-          <Route path="/Search/:query?" component={AssetsPage} />
-        </Switch>
-      </div>
+      <Navigation />      
+      <Switch>
+        <Route path="/" exact component={AssetsPage} />
+        <Route path="/Asset/:urlSlug?" component={AssetDetailsContainer} />
+        <Route path="/Search/:query?" component={AssetsPage} />
+      </Switch>      
     </Router>
   </Provider>
 )

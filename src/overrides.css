@@ -5,3 +5,32 @@
   font-weight: bold;
   text-transform: uppercase;
 }
+
+.call-action {
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');  
+  background-repeat: no-repeat;
+  background-position: 50% 45%;
+  background-size: cover;  
+  height: calc(100vh - 56px);
+  width: 100%;
+  margin-top: 56px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: aliceblue;
+}
+
+.center h1 {
+  font-size: 60px;
+  text-shadow: 2px 2px black;
+}
+
+.center h2 {
+  font-size: 35px;
+  text-shadow: 2px 2px black;
+}
