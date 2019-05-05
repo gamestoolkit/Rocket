@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 import history from '../history'
 
 const SearchBar = () => {
   const submitAction = (e) => {
-    e.preventDefault(); 
-    history.push(`/Search/${input.value}`); 
+    e.preventDefault()
+    history.push(`/Search/${input.value}`)
     input.value = ''
   }
 
@@ -19,7 +19,7 @@ const SearchBar = () => {
       />
       <input type="submit" className="btn btn-outline-success ml-1" value="Search" />
     </form>
-  );
-};
+  )
+}
 
-export default SearchBar;
+export default SearchBar

@@ -1,8 +1,8 @@
-import React from 'react';
-import { fetchCurrentAsset } from "../actions";
-import { getCurrentAsset, getIsLoading, getUrlSlug } from "../selectors";
-import { connect } from "react-redux";
-import AssetDetails from "../components/AssetDetails";
+import React from 'react'
+import { fetchCurrentAsset } from "../actions"
+import { getCurrentAsset, getIsLoading, getUrlSlug } from "../selectors"
+import { connect } from "react-redux"
+import AssetDetails from "../components/AssetDetails"
 import { withRouter } from 'react-router'
 
 class AssetDetailsContainer extends React.Component {

@@ -1,7 +1,7 @@
 import React from 'react'
 import AssetsContainer from '../containers/AssetsContainer'
-import SearchBar from '../components/SearchBar';
-import AssetsSlideContainer from '../containers/AssetsSlideContainer';
+import SearchBar from '../components/SearchBar'
+import AssetsSlideContainer from '../containers/AssetsSlideContainer'
 
 const AssetsPage = () => ( 
   <>

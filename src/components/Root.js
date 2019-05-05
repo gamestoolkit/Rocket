@@ -2,9 +2,9 @@ import React from 'react'
 import { Provider } from 'react-redux'
 import { Router, Route, Switch } from 'react-router-dom'
 import Navigation from './Navigation'
-import AssetsPage from '../pages/AssetsPage';
-import AssetDetailsContainer from '../containers/AssetDetailsContainer';
-import history from '../history';
+import AssetsPage from '../pages/AssetsPage'
+import AssetDetailsContainer from '../containers/AssetDetailsContainer'
+import history from '../history'
 
 const Root = ({ store }) => (
   <Provider store={store}>

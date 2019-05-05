@@ -8,6 +8,6 @@ const Constants = Object.freeze({
     SET_CURRENT_ASSET: 'SET_CURRENT_ASSET', 
     RECEIVING_ASSETS: 'RECEIVING_ASSETS'
   }
-});
+})
 
 export default Constants

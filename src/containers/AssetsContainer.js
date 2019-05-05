@@ -1,9 +1,9 @@
-import React from 'react';
-import { connect } from 'react-redux';
+import React from 'react'
+import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
-import { getAssets, getIsLoading, getQueryFromUrl } from '../selectors';
-import Assets from '../components/Assets';
-import { fetchAssets, filterAssets } from "../actions";
+import { getAssets, getIsLoading, getQueryFromUrl } from '../selectors'
+import Assets from '../components/Assets'
+import { fetchAssets, filterAssets } from "../actions"
 
 class AssetsContainer extends React.Component {
   componentDidMount() {
