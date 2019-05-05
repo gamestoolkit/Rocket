@@ -6,8 +6,6 @@ import AssetsPage from '../pages/AssetsPage';
 import AssetDetailsContainer from '../containers/AssetDetailsContainer';
 import history from '../history';
 
-import '../common/style.css'
-
 const Root = ({ store }) => (
   <Provider store={store}>
     <Router history={history} >
