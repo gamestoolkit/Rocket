@@ -1,11 +1,8 @@
 import React from 'react'
-import Disqus from 'disqus-react';
+import Disqus from 'disqus-react'
 import { assetType } from '../common/types'
 import Constants from '../common/constants'
-import Gallery from './Gallery';
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import {Link} from 'react-router-dom'
+import Gallery from './Gallery'
 
 const AssetDetails = ({ asset }) => { 
   const disqusShortname = Constants.DISQUS_SHORTNAME

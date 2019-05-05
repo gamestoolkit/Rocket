@@ -1,5 +1,5 @@
-import React from 'react';
-import Asset from './Asset';
+import React from 'react'
+import Asset from './Asset'
 
 const Assets = ({ assets }) => (
   <div className="row">    

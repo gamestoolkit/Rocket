@@ -1,6 +1,6 @@
 import React from 'react'
 import { assetType } from '../common/types'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 const Asset = ({ asset }) => {  
   return (    
