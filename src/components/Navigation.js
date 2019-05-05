@@ -15,7 +15,10 @@ const Navigation = () => (
         <Nav className="mr-auto">
           <Link className="nav-link" to={`/`}>
             Home
-          </Link>      
+          </Link>
+          <Link className="nav-link" to={`/Assets`}>
+            Browse
+          </Link>
         </Nav>        
         <SearchBar />
       </Navbar.Collapse>
