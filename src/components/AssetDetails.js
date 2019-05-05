@@ -1,11 +1,8 @@
 import React from 'react'
-import Disqus from 'disqus-react';
+import Disqus from 'disqus-react'
 import { assetType } from '../common/types'
 import Constants from '../common/constants'
-import Gallery from './Gallery';
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import {Link} from 'react-router-dom'
+import Gallery from './Gallery'
 
 const AssetDetails = ({ asset }) => { 
   const disqusShortname = Constants.DISQUS_SHORTNAME
@@ -17,17 +14,35 @@ const AssetDetails = ({ asset }) => {
 
   return (    
   <>
-    <Row>
-      <Col>
-        <h1>{asset.title}</h1>
-        <Link to='/Asset/fabric-materials-56-pack'>GO</Link>
+    <h1>Free Asset</h1>
+    <div className="row">
+      <div className="col">
         {asset.imagesUrl && <Gallery imagesUrl={asset.imagesUrl} />}
-      </Col>
-      <Col></Col>
-    </Row>
-    <hr />
-    <Row>
-      <Col>
+      </div>
+      <div className="col">
+        <h2>{asset.title}</h2>
+        <h3>Description</h3>
+        <p>
+          {asset.description}
+        </p>
+
+        <h4>Source</h4>
+        <p>{asset.source}</p>
+
+        <a 
+          className="btn btn-primary" 
+          href={asset.sourceUrl} 
+          target="_blank" 
+          rel="noopener noreferrer">
+            DOWNLOAD
+        </a>
+      </div>
+    </div>
+
+    <hr/>
+
+    <div className="row">
+      <div className="col">
         <h2>Discussion</h2>
         <Disqus.CommentCount 
           shortname={disqusShortname} 
@@ -37,8 +52,8 @@ const AssetDetails = ({ asset }) => {
         <Disqus.DiscussionEmbed 
           shortname={disqusShortname} 
           config={disqusConfig} />
-      </Col>
-    </Row>
+      </div>
+    </div>
   </>
   )
 }

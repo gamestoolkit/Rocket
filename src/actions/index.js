@@ -1,5 +1,5 @@
 import Constants from '../common/constants'
-import AssetsApi from '../api';
+import AssetsApi from '../api'
 
 export const fetchingAssets = () => ({
   type: Constants.ACTIONS.FETCHING_ASSETS
@@ -30,8 +30,8 @@ export const fetchCurrentAsset = (urlSlug) => async(dispatch) => {
 }
 
 export const filterAssets = (query) => async(dispatch) => {
-  dispatch(fetchingAssets());
-  const api = new AssetsApi();
-  const assets = await api.filter(query);
-  dispatch(receivingAssets(assets));  
-};
+  dispatch(fetchingAssets())
+  const api = new AssetsApi()
+  const assets = await api.filter(query)
+  dispatch(receivingAssets(assets))
+}

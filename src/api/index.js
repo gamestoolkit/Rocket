@@ -1,4 +1,4 @@
-import Constants from "../common/constants";
+import Constants from "../common/constants"
 
 class AssetsApi {
   constructor() {
@@ -12,9 +12,9 @@ class AssetsApi {
   }
 
   async filter(query) {
-    const response = await fetch(`${this.apiUrl}?q=${query}`);
-    const assets = await response.json();
-    return assets;
+    const response = await fetch(`${this.apiUrl}?q=${query}`)
+    const assets = await response.json()
+    return assets
   }
 
   async findByUrlSlug(slug) {

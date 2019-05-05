@@ -1,6 +1,6 @@
-import { connect } from 'react-redux';
-import AssetsSlide from '../components/AssetsSlide';
-import { getFirstsAssets, getIsLoading } from '../selectors';
+import { connect } from 'react-redux'
+import AssetsSlide from '../components/AssetsSlide'
+import { getFirstsAssets, getIsLoading } from '../selectors'
 
 const mapStateToProps = state => ({
   assets: getFirstsAssets(state, 3),

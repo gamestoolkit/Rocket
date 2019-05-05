@@ -1,6 +1,6 @@
 import assets from './assets'
 import deepFreeze from 'deep-freeze'
-import Constants from '../common/constants';
+import Constants from '../common/constants'
 
 describe('assets reducer', () => {
   it('should handle initial state', () => {
@@ -10,13 +10,13 @@ describe('assets reducer', () => {
   })
 
   it('should handle FETCHING_DATA for a new state', () => {
-    const stateBefore = {};
+    const stateBefore = {}
     const action = {
       type: Constants.ACTIONS.FETCHING_ASSETS      
     }
     
-    deepFreeze(stateBefore);
-    deepFreeze(action);
+    deepFreeze(stateBefore)
+    deepFreeze(action)
 
     expect(
       assets(stateBefore, action)
@@ -24,14 +24,14 @@ describe('assets reducer', () => {
   })
 
   it('should handle RECEIVING_ASSETS after loading', () => {
-    const stateBefore = { isLoading: true };
+    const stateBefore = { isLoading: true }
     const action = {
       type: Constants.ACTIONS.RECEIVING_ASSETS,      
       payload: { an: 'object' }
     }
     
-    deepFreeze(stateBefore);
-    deepFreeze(action);
+    deepFreeze(stateBefore)
+    deepFreeze(action)
 
     expect(
       assets(stateBefore, action)

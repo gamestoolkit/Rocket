@@ -1,13 +1,10 @@
 import React from 'react'
 import AssetsContainer from '../containers/AssetsContainer'
-import SearchBar from '../components/SearchBar';
-import AssetsSlideContainer from '../containers/AssetsSlideContainer';
 
 const AssetsPage = () => ( 
-  <>
-    <AssetsSlideContainer />    
-    <div className="mt-4">
-      <AssetsContainer />
+  <>    
+    <div id="main-container" className="container mt-5">
+        <AssetsContainer />
     </div>
   </>
 )

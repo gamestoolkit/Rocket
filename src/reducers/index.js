@@ -4,4 +4,4 @@ import assets from './assets'
 
 export default combineReducers({
   assets
-});
+})
