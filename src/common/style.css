@@ -1,6 +1,0 @@
-.card > a:hover,
-.card > a:active,
-.card > a:visited {
-    text-decoration: none;    
-    color: inherit;
-}
