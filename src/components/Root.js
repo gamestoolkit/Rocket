@@ -2,18 +2,19 @@ import React from 'react'
 import { Provider } from 'react-redux'
 import { Router, Route, Switch } from 'react-router-dom'
 import Navigation from './Navigation'
-import AssetsPage from '../pages/AssetsPage';
-import AssetDetailsContainer from '../containers/AssetDetailsContainer';
-import history from '../history';
+import AssetsPage from '../pages/AssetsPage'
+import history from '../history'
+import AssetDetailsPage from '../pages/AssetDetailsPage'
+import HomePage from '../pages/HomePage'
 
 const Root = ({ store }) => (
   <Provider store={store}>
-    <Router history={history} >
+    <Router history={history}>
       <Navigation />      
       <Switch>
-        <Route path="/" exact component={AssetsPage} />
-        <Route path="/Asset/:urlSlug?" component={AssetDetailsContainer} />
+        <Route path="/" exact component={HomePage} />
         <Route path="/Search/:query?" component={AssetsPage} />
+        <Route path="/Asset/:urlSlug?" component={AssetDetailsPage} />
       </Switch>      
     </Router>
   </Provider>
