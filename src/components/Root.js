@@ -13,6 +13,7 @@ const Root = ({ store }) => (
       <Navigation />      
       <Switch>
         <Route path="/" exact component={HomePage} />
+        <Route path="/Assets" component={AssetsPage} />
         <Route path="/Search/:query?" component={AssetsPage} />
         <Route path="/Asset/:urlSlug?" component={AssetDetailsPage} />
       </Switch>      
