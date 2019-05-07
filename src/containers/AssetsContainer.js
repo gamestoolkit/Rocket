@@ -4,6 +4,7 @@ import { withRouter } from 'react-router-dom'
 import { getAssets, getIsLoading, getQueryFromUrl } from '../selectors'
 import Assets from '../components/Assets'
 import { fetchAssets, filterAssets } from "../actions"
+import Spinner from '../components/Spinner';
 
 class AssetsContainer extends React.Component {
   componentDidMount() {
@@ -30,7 +31,7 @@ class AssetsContainer extends React.Component {
 
   render(){
     if (this.props.isLoading)
-      return <h1>Loading</h1>
+      return <Spinner />
     else   
       return (
         <>

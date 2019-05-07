@@ -4,6 +4,7 @@ import { getCurrentAsset, getIsLoading, getUrlSlug } from "../selectors"
 import { connect } from "react-redux"
 import AssetDetails from "../components/AssetDetails"
 import { withRouter } from 'react-router'
+import Spinner from '../components/Spinner';
 
 class AssetDetailsContainer extends React.Component {
   fetchData() {
@@ -21,7 +22,7 @@ class AssetDetailsContainer extends React.Component {
 
   render(){
     if (this.props.isLoading || !this.props.asset)
-      return <h1>Loading</h1>
+      return <Spinner />
     else   
       return <AssetDetails asset={this.props.asset} />
   }
