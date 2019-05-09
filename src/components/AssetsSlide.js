@@ -1,6 +1,6 @@
 import React from 'react'
 import Gallery from './Gallery'
-import Spinner from './Spinner';
+import Spinner from './Spinner'
 
 const AssetsSlide = ({ assets, isLoading }) => {
   if (isLoading || !assets)

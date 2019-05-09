@@ -4,7 +4,7 @@ import { getCurrentAsset, getIsLoading, getUrlSlug } from "../selectors"
 import { connect } from "react-redux"
 import AssetDetails from "../components/AssetDetails"
 import { withRouter } from 'react-router'
-import Spinner from '../components/Spinner';
+import Spinner from '../components/Spinner'
 
 class AssetDetailsContainer extends React.Component {
   fetchData() {

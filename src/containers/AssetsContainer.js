@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom'
 import { getAssets, getIsLoading, getQueryFromUrl } from '../selectors'
 import Assets from '../components/Assets'
 import { fetchAssets, filterAssets } from "../actions"
-import Spinner from '../components/Spinner';
+import Spinner from '../components/Spinner'
 
 class AssetsContainer extends React.Component {
   componentDidMount() {
