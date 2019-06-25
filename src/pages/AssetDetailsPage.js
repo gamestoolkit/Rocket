@@ -1,5 +1,5 @@
 import React from 'react'
-import AssetDetailsContainer from '../containers/AssetDetailsContainer';
+import AssetDetailsContainer from '../containers/AssetDetailsContainer'
 
 const AssetDetailsPage = () => ( 
   <>    
