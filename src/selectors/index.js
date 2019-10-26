@@ -1,5 +1,5 @@
 
-export const getAssets = (state) => state.assets.data
+export const getAssets = (state) => state.assets.byId ? Object.values(state.assets.byId) : []
 
 export const getFirstsAssets = (state, n) => state.assets.data.slice(0, n)
 
