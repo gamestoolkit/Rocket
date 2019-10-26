@@ -1,5 +1,8 @@
 import Constants from '../common/constants'
 
+
+const getIds = (payload) => Object.keys(payload)
+
 const defaultState = {
   isLoading: true,
   data: [],
@@ -18,7 +21,8 @@ const assets = (state = defaultState, action) => {
       return {
         ...state,
         isLoading: false,
-        data: action.payload
+        byId: action.payload,
+        allIds: getIds(action.payload)
       }
 
     case Constants.ACTIONS.SET_CURRENT_ASSET:
