@@ -27,7 +27,11 @@ describe('assets reducer', () => {
     const stateBefore = { isLoading: true }
     const action = {
       type: Constants.ACTIONS.RECEIVING_ASSETS,      
-      payload: { an: 'object' }
+      payload: { 
+        '1': 'Asset1',
+        '2': 'Asset2',
+        '3': 'Asset3'
+      }
     }
     
     deepFreeze(stateBefore)
@@ -35,7 +39,15 @@ describe('assets reducer', () => {
 
     expect(
       assets(stateBefore, action)
-    ).toEqual({ isLoading: false, data: { an: 'object' } })
+    ).toEqual({ 
+      isLoading: false, 
+      byId: { 
+        '1': 'Asset1',
+        '2': 'Asset2',
+        '3': 'Asset3'
+      },
+      allIds: ['1', '2', '3'] 
+    })
   })
 })
 
