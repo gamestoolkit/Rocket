@@ -13,7 +13,7 @@ const HomePage = () => (
       </div>
     </div>
     <div id="main-container" className="container">
-      <AssetsSlideContainer />    
+      <AssetsSlideContainer />
       <div className="mt-2">
         <AssetsContainer />
       </div>

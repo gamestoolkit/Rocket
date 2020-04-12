@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { withRouter } from 'react-router-dom'
+import { withRouter } from 'next/router'
 import { getAssets, getIsLoading, getQueryFromUrl } from '../selectors'
 import Assets from '../components/Assets'
 import { fetchAssets, filterAssets } from "../actions"
